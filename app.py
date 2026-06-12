@@ -10,5 +10,9 @@ def index():
 def hobbies():
     return render_template("hobbies.html")
 
+@app.route("/business")
+def business():
+    return render_template("business.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
